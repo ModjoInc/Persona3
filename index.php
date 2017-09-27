@@ -45,47 +45,49 @@
       <section id="one" class="main style2 right dark fullscreen">
         <div class="content box style2">
           <header>
-            <h2>What I Do</h2>
-          </header>
-          <p>At Becode we've learned to learn the code and crack it. Since it is new for me, I'm unravelling the path and I enjoy discovering every step.</p>
-          <p>The Front End part is what I am most <em>excited</em> about. I adore <strong>CSS/SASS and the design part</strong>, although I know there is a lot more for me to master <em>(I would like to learn more about UX)</em>.</p>
-          <p>I learned some <strong>Javascript</strong> , <strong>JQuery</strong>, <strong>PHP</strong>, MySql, Symfony,etc.</p>
-          <p>
-          <a href="https://www.linkedin.com/in/habib-el-maaza-gomez-59082165/" class="icon fa-linkedin" target="_blank"><span class="label"> LinkedIn </span></a> ||
-            <a href="https://github.com/ModjoInc/Persona" class="icon fa-github" target="_blank"><span class="label"> Repo of this webapp on Github </span></a></p>
-        </div>
-        <!-- <a href="#two">Next</a> -->
-      </section>
-
-    <!-- Two -->
-      <section id="two" class="main style2 left dark fullscreen">
-        <div class="content box style2">
-          <header>
             <h2>Who I Am</h2>
           </header>
           <p>My background is in Psychological studies and I carry with me the sense for <strong>fine-tuning human relationships</strong>. It helps me to understand and respond quickly while team working. Also, it helps a lot to follow the needs and wishes of the clients.</p>
           <p>When friends and colleagues talk about me, they describe me as a mainly as <strong>friendly mediator</strong>. My optimistic nature drive me to get along with (almost) everybody.</p>
           <p>I'm also a <strong>hacker</strong>... with good intentions. I enjoy spending hours in cracking a code, trying to find a solution to some coding mystery.</p>
           <p>Not to mention, I am a gamer and when I'm not gaming I read... a lot.</p>
+
+        </div>
+        <!-- <a href="#two">Next</a> -->
+      </section>
+
+    <!-- Two -->
+      <section id="two" class="main style1 fullscreen">
+        <div class="content box style2">
+          <header>
+            <h2>What I Do</h2>
+          </header>
+          <p>At Becode we've learned to learn the code and crack it. Since it is new for me, I'm unravelling the path and I enjoy discovering every step.</p>
+          <p>The Front End part is what I am most <em>excited</em> about. I adore <strong>CSS/SASS and the design part</strong>, although I know there is a lot more for me to master <em>like UX</em>.</p>
+          <p>I learned some <strong>Javascript</strong> , <strong>JQuery</strong>, <strong>PHP</strong>, MySql, Symfony,etc.</p>
+          <p>
+          <a href="https://www.linkedin.com/in/habib-el-maaza-gomez-59082165/" class="icon fa-linkedin" target="_blank"><span class="label"> LinkedIn  </span></a>
+            <a href="https://github.com/ModjoInc/Persona" class="icon fa-github" target="_blank"><span class="label"> Repo of this webapp on Github </span></a></p>
         </div>
         <!-- <a href="#three">Next</a> -->
       </section>
 
-      <section id="three" class="main style2 right dark fullscreen">
+      <section id="three" class="main style1 fullscreen">
         <div class="content box style2">
           <header>
             <h2>Why Central?</h2>
           </header>
           <p><a href="https://twitter.com/pixeline?lang=es">One of our coaches</a> at Becode mentioned Central Design when we were discussing the potentials internships. He praised your agency and I became curious. So I googled you and waouww! The stuff you have done...</p>
-          <p>I have to admit that I was intimidated at first. But then I went all <em>'Leroooooy'</em> on this. If I have to do an internship, it is of my best interest to <strong>aim for the top</strong>.</p>
-          <p>And voilà!</p>
+          <p>It seems to me that i could grow as a front-end developer with you and learn what i love the most about coding: <strong>create beautiful, user friendly and enjoyable content</strong> in a friendly and competent team.</p>
+          <p>I know i have still a lot to learn but coding brings me so much <strong>fun</strong> that i am willing to give it all!</p>
+          <p>My internship starts end of october for a period of 1 to three months.</p>
         </div>
         <!-- <a href="#work">Next</a> -->
       </section>
 
 
     <!-- Work -->
-      <section id="work" class="main style3 accent1 primary">
+      <section id="work" class="main style1 primary">
         <div class="content">
           <p>&nbsp;</p>
           <header>
@@ -227,11 +229,11 @@
       </section>
 
     <!-- Contact -->
-      <section id="contact" class="main style3 secondary">
+      <section id="contact" class="main style1 secondary">
         <div class="content">
           <header>
-            <h2>Want to meet me?</h2>
-            <p>It's easy as sending me a mail ;)</p>
+            <h2>Let's talk!</h2>
+            <p>Starting with an email ;)</p>
           </header>
           <div class="box">
             <form method="post">

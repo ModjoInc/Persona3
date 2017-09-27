@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Arimo:400,700|Pacifico:400");
+@import url("https://fonts.googleapis.com/css?family=Sintony:400,700|Poppins:400");
 @import url("font-awesome.min.css");
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -330,11 +330,11 @@ body {
     line-height: 2.025em; } }
 /* Type */
 body, input, textarea, select {
-  font-family: "Arimo", sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: 400;
   font-size: 18pt;
   line-height: 1.75em;
-  color: #FFF;
+  color: #39454b;
   letter-spacing: 0.025em; }
   @media screen and (max-width: 1920px) {
     body, input, textarea, select {
@@ -354,7 +354,7 @@ body, input, textarea, select {
       line-height: 1.5em; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Pacifico", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #493142;
   letter-spacing: -0.0325em; }
@@ -363,11 +363,11 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none; }
 
 h5 {
-  font-family: "Arimo", sans-serif;
+  font-family: "Sintony", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
-  color: #ececec;
-  padding: 1em; }
+  padding: 1em;
+  color: #fffaff; }
 
 h2 {
   font-size: 3.5em;
@@ -389,7 +389,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #424b54; }
+  color: #FFF; }
 
 sub {
   position: relative;
@@ -415,7 +415,6 @@ p, ul, ol, dl, table {
 
 /* Box */
 .box {
-  background-color: rgba(251, 80, 80, 0.7);
   color: #39454b;
   padding: 2em; }
   .box > :last-child {
@@ -426,8 +425,7 @@ p, ul, ol, dl, table {
     .box {
       padding: 1em; }
       .box.style2 {
-        padding: 1.5em 1.25em 1.5em 1.25em;
-        background-color: rgba(255, 255, 255, 0.9); } }
+        padding: 1.5em 1.25em 1.5em 1.25em; } }
 
 /* Button */
 input[type="button"],
@@ -443,10 +441,10 @@ button {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: #424b54;
+  background-color: #FFF;
   border: 0;
   border-radius: 3.5em;
-  color: #FFF;
+  color: #242424;
   cursor: pointer;
   display: inline-block;
   height: 3.5em;
@@ -492,13 +490,13 @@ button {
   input[type="reset"]:hover,
   .button:hover,
   button:hover {
-    background-color: #4d5862; }
+    background-color: white; }
   input[type="button"]:active,
   input[type="submit"]:active,
   input[type="reset"]:active,
   .button:active,
   button:active {
-    background-color: #fa3737; }
+    background-color: #f2f2f2; }
   input[type="button"].style2,
   input[type="submit"].style2,
   input[type="reset"].style2,
@@ -592,7 +590,7 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #9ac8e9; }
+    border-color: #292929; }
 
 input[type="text"],
 input[type="password"],
@@ -1197,7 +1195,7 @@ table {
   left: 0;
   top: 0;
   width: 100%;
-  background: rgba(66, 75, 84, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   height: 3em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1); }
@@ -1213,7 +1211,7 @@ table {
   #header .active {
     text-decoration: underline;
     text-decoration-style: dotted;
-    color: #868686; }
+    color: #000; }
   #header nav {
     position: absolute;
     right: 0.5em;
@@ -1353,7 +1351,7 @@ table {
     .main.style3.secondary {
       background: #FB5050; }
   .main.dark {
-    color: #FB5050; }
+    color: #242424; }
     .main.dark a {
       color: inherit; }
     .main.dark .button.style2 {
@@ -1409,8 +1407,8 @@ table {
   height: 5em;
   line-height: 5em;
   margin: 0;
-  background: #424b54;
-  color: #FFF;
+  background: #FFF;
+  color: #242424;
   overflow: hidden; }
   #footer a {
     color: inherit; }
@@ -1470,13 +1468,7 @@ table {
 
 /* Intro */
 #intro {
-  background: #424b54;
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, bottom center;
-  background-repeat: repeat, no-repeat; }
-  #intro h2 {
-    color: #FB5050; }
+  background: #FFF; }
   #intro a {
     text-decoration-style: dotted;
     color: #343434; }
@@ -1496,40 +1488,48 @@ table {
 
 /* Two */
 #two {
-  background: url("images/overlay.png"), url("../../images/two.jpg");
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center; }
+  background-color: #296eb4; }
+  #two .box {
+    color: #fffaff; }
+    #two .box h2 {
+      color: #fcfcfc; }
 
 /* Three */
 #three {
-  background: url("images/overlay.png"), url("../../images/two.jpg");
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center; }
+  background-color: #fffaff; }
+  #three a, #three a:visited {
+    color: #797979;
+    text-decoration-style: dotted; }
 
-#work .content h2 {
-  color: #FB5050; }
-#work .content a {
-  color: #1c1c1c;
-  text-decoration-style: dotted; }
-#work .content a:visited {
-  color: #1c1c1c;
-  text-decoration-style: dotted; }
-#work .content .anim {
-  padding: 3em; }
-#work img, #work svg {
-  display: inline-block;
-  vertical-align: middle; }
-#work svg {
-  height: 50px;
-  width: 50px;
-  display: inline-block; }
+#work {
+  background-color: #22AAEE;
+  color: #fffaff; }
+  #work h2 {
+    color: #fffaff; }
+  #work .content a {
+    color: #fffaff;
+    text-decoration-style: dotted; }
+  #work .content a:visited {
+    color: #fffaff;
+    text-decoration-style: dotted; }
+  #work .content .anim {
+    padding: 3em; }
+  #work img, #work svg {
+    display: inline-block;
+    vertical-align: middle; }
+  #work svg {
+    height: 50px;
+    width: 50px;
+    display: inline-block; }
 
 /* Contact */
 #contact {
   overflow: hidden;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  background-color: #8BAB42;
+  color: #fffaff; }
+  #contact h2 {
+    color: #fffaff; }
   #contact .box {
     -moz-transition: -moz-transform 1s ease;
     -webkit-transition: -webkit-transform 1s ease;

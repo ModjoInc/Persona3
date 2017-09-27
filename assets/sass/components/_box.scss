@@ -1,7 +1,7 @@
 /* Box */
 
 	.box {
-		background-color: transparentize(_palette(dark, bg), 0.3);
+		// background-color: transparentize(_palette(bg), 0.3);
 		color: _palette(fg);
 		padding: 2em;
 
@@ -18,7 +18,7 @@
 
 			&.style2 {
 				padding: 1.5em 1.25em 1.5em 1.25em;
-				background-color: transparentize(_palette(bg), 0.1);
+				// background-color: transparentize(_palette(bg), 0.1);
 			}
 		}
 	}

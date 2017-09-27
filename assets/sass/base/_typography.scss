@@ -5,7 +5,7 @@
     font-weight: _font(weight);
     font-size: 18pt;
     line-height: 1.75em;
-    color: _palette(bg);
+    color: _palette(fg);
     letter-spacing: 0.025em;
 
     @include breakpoint(xxlarge) {
@@ -45,8 +45,8 @@
     font-family: _font(family);
     font-weight: _font2(weight-bold);
     font-size: 1.5em;
-    color: #ececec;
     padding: 1em;
+    color: #fffaff;
   }
 
   h2 {

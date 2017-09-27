@@ -16,13 +16,14 @@
 
 // Font des paragraphes
   $font: (
-    family:        ('Arimo', sans-serif),
+    family:        ('Sintony', sans-serif),
     weight:        400,
     weight-bold:    700
   );
+
 //font des titres
   $font2: (
-    family:        ('Pacifico', cursive),
+    family:        ('Poppins', sans-serif),
     weight:        400,
     weight-bold:    400
   );
@@ -35,22 +36,22 @@
     fg-bold:      #39454b,
     border:        #e5e6e7,
     dark: (
-      bg:        #FB5050,
-      fg:        #FB5050,
+      bg:        #FFF,
+      fg:        #242424,
       fg-bold:    #FB5050,
       border:      #ffffff
     ),
     accent1: (
-      bg:        #424b54,
+      bg:        #FFF,
       fg:        #FFF,
       fg-bold:    #2a2a2a,
       border:      #ffffff
     ),
     accent2: (
-      bg:        #9ac8e9,
-      fg:        #ffffff,
-      fg-bold:    #ffffff,
-      border:      #ffffff
+      bg:        #292929,
+      fg:        #242424,
+      fg-bold:    #fff,
+      border:      #fff
     ),
     accent3: (
       bg:        #39454b,
