@@ -19,7 +19,7 @@
             <li><a href="#intro">Intro</a></li>
             <li><a href="#one">What I Do</a></li>
             <li><a href="#two">Who I Am</a></li>
-            <li><a href="#three">Why Cherry Pulp ?</a></li>
+            <li><a href="#three">Why Central Design ?</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -31,10 +31,10 @@
         <div class="content">
           <header>
             <p><sub><?php if (isset($message2)) {echo $message2;} ?></sub></p>
-            <h2>Hello Cherry Pulp...</h2>
+            <h2>Hello Central...</h2>
             <p><?php if (isset($message2)) {echo '...and hello to you <strong>' . $_POST['nom'] . '</strong> !';} ?></p>
           </header>
-          <p>I'm Habib, a trainee web developer. I enrolled in a coding course in April 2017 (<a href="http://becode.org" target="_blank">Becode</a>) and I <strong>loved</strong> it so much that I decided to change my career path and dedicated 100% of my time and energy to my new passion...And now i would like to give <strong>Cherry Pulp</strong> some of that good energy!</p>
+          <p>I'm Habib, a trainee web developer. I enrolled in a coding course in April 2017 (<a href="http://becode.org" target="_blank">Becode</a>) and I <strong>loved</strong> it so much that I decided to change my career path and dedicated 100% of my time and energy to my new passion...And now i would like to give <strong>Central</strong> some of that good energy!</p>
           <footer>
             <a href="#one" class="button style2 down">More</a>
           </footer>
@@ -74,9 +74,9 @@
       <section id="three" class="main style2 right dark fullscreen">
         <div class="content box style2">
           <header>
-            <h2>Why Cherry Pulp?</h2>
+            <h2>Why Central?</h2>
           </header>
-          <p><a href="https://twitter.com/pixeline?lang=es">One of our coaches</a> at Becode mentioned Cherry Pulp when we were discussing the potentials internships. He praised your agency and I became curious. So I googled you and waouww! The stuff you have done...</p>
+          <p><a href="https://twitter.com/pixeline?lang=es">One of our coaches</a> at Becode mentioned Central Design when we were discussing the potentials internships. He praised your agency and I became curious. So I googled you and waouww! The stuff you have done...</p>
           <p>I have to admit that I was intimidated at first. But then I went all <em>'Leroooooy'</em> on this. If I have to do an internship, it is of my best interest to <strong>aim for the top</strong>.</p>
           <p>And voilà!</p>
         </div>
