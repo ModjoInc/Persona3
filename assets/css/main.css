@@ -1530,6 +1530,9 @@ table {
   color: #fffaff; }
   #contact h2 {
     color: #fffaff; }
+  #contact p small {
+    color: #FFF;
+    font-size: 0.6em; }
   #contact .box {
     -moz-transition: -moz-transform 1s ease;
     -webkit-transition: -webkit-transform 1s ease;

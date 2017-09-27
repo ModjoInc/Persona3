@@ -17,8 +17,8 @@
         <nav>
           <ul>
             <li><a href="#intro">Intro</a></li>
-            <li><a href="#one">What I Do</a></li>
-            <li><a href="#two">Who I Am</a></li>
+            <li><a href="#one">Who I Am</a></li>
+            <li><a href="#two">What I Do</a></li>
             <li><a href="#three">Why Central Design ?</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -30,11 +30,13 @@
       <section id="intro" class="main style2 fullscreen">
         <div class="content">
           <header>
-            <p><sub><?php if (isset($message2)) {echo $message2;} ?></sub></p>
+            <p><sub><?php if (isset($message2)) {
+              echo $_POST['nom'] . $message2;
+            } ?></sub></p>
             <h2>Hello Central...</h2>
-            <p><?php if (isset($message2)) {echo '...and hello to you <strong>' . $_POST['nom'] . '</strong> !';} ?></p>
+
           </header>
-          <p>I'm Habib, a trainee web developer. I enrolled in a coding course in April 2017 (<a href="http://becode.org" target="_blank">Becode</a>) and I <strong>loved</strong> it so much that I decided to change my career path and dedicated 100% of my time and energy to my new passion...And now i would like to give <strong>Central</strong> some of that good energy!</p>
+          <p>I'm Habib, a trainee web developer. I enrolled in a coding course in April 2017 (<a href="http://becode.org" target="_blank">Becode</a>) and I <strong>loved</strong> it so much that I decided to change my career path and dedicated 100% of my time and energy to my new passion...And now I would like to give <strong>Central</strong> some of that good energy!</p>
           <footer>
             <a href="#one" class="button style2 down">More</a>
           </footer>
@@ -50,7 +52,9 @@
           <p>My background is in Psychological studies and I carry with me the sense for <strong>fine-tuning human relationships</strong>. It helps me to understand and respond quickly while team working. Also, it helps a lot to follow the needs and wishes of the clients.</p>
           <p>When friends and colleagues talk about me, they describe me as a mainly as <strong>friendly mediator</strong>. My optimistic nature drive me to get along with (almost) everybody.</p>
           <p>I'm also a <strong>hacker</strong>... with good intentions. I enjoy spending hours in cracking a code, trying to find a solution to some coding mystery.</p>
-          <p>Not to mention, I am a gamer and when I'm not gaming I read... a lot.</p>
+          <p>I know I still have a lot to learn but coding brings me so much <strong>fun</strong> that I am willing to give it all!</p>
+          <p>Not to mention, I am a gamer and when I'm not gaming I read</p>
+          <p>a lot.</p>
 
         </div>
         <!-- <a href="#two">Next</a> -->
@@ -78,8 +82,8 @@
             <h2>Why Central?</h2>
           </header>
           <p><a href="https://twitter.com/pixeline?lang=es">One of our coaches</a> at Becode mentioned Central Design when we were discussing the potentials internships. He praised your agency and I became curious. So I googled you and waouww! The stuff you have done...</p>
-          <p>It seems to me that i could grow as a front-end developer with you and learn what i love the most about coding: <strong>create beautiful, user friendly and enjoyable content</strong> in a friendly and competent team.</p>
-          <p>I know i have still a lot to learn but coding brings me so much <strong>fun</strong> that i am willing to give it all!</p>
+          <p>It seems to me that I could grow as a front-end developer with you and learn what I love the most about coding: <strong>create beautiful, user friendly and enjoyable content</strong> in a friendly and competent team.</p>
+          <p>As I mentioned above, one of the many things I would like to learn is <strong>UX and User centered design</strong>, what better place to start my journey than yours!</p>
           <p>My internship starts end of october for a period of 1 to three months.</p>
         </div>
         <!-- <a href="#work">Next</a> -->
@@ -237,11 +241,18 @@
           </header>
           <div class="box">
             <form method="post">
-              <div class="field half first"><input type="text" name="nom" placeholder="Name" /></div>
-              <div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-              <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+              <div class="field half first"><input type="text" name="nom" placeholder="Name" /><p><small><?php if (isset($errorName)) {
+                echo $errorName;
+              }?></small></p></div>
+              <div class="field half"><input type="email" name="email" placeholder="Email" /><p><small><?php if (isset($errorMail)) {
+                echo $errorMail;
+              }?></small></p></div>
+              <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea><p><small><?php if (isset($errorMessage)) {
+                echo $errorMessage;
+              }?></small></p></div>
               <ul class="actions">
                 <li><input type="submit" value="Send Message" name="submit"/></li>
+
               </ul>
             </form>
           </div>

@@ -14,38 +14,48 @@ if (isset($_POST["submit"])) {
       'message' => FILTER_SANITIZE_STRING);
       $result = filter_input_array(INPUT_POST, $options);
       if ($result != null AND $result!= FALSE){
-           $message3 = "Tous les champs ont été nettoyés !";
+           $message3 = "All seems goody";
         }  else  {
-           $message3 =  "Un champs est vide ou n'est pas correct!";
+           $message3 =  "There is something missing...i guess :)";
         }
     //methode validation
-    $errors='';
+    $errors = 1;
+    $errorName="";
+    $errorMail="";
+    $errorMessage="";
       if ($_POST['nom'] != "") {
       $_POST['nom'] = trim($_POST['nom']);
       if ($_POST['nom'] == "") {
-      $errors .= 'Entrez votre nom.<br/><br/>';
+        $errors++;
+        $errorsName = 'So...What is your name again?';
       }
       } else {
-      $errors .= 'Le nom est mal écrit.<br/>';
+        $errors++;
+      $errorName .= 'There is something wrong with the name...sorry ^^';
       }
 
     if ($_POST['email'] != "") {
      $email = trim($_POST['email']);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors .= $email . "n'est  <strong>pas</strong> un format valide.<br/><br/>";
+         $errors++;
+         $errorMail = "? are you sure this is an email?.";
         }
         } else {
-        $errors .= 'Veuillez écrire une adresse mail valide<br/>';
+          $errors++;
+        $errorMail .= 'Are you sure this is a valid email?';
       }
     if ($_POST['message'] != "") {
        $_POST['message'] = trim($_POST['message']);
     if ($_POST['message'] == "") {
-       $errors .= 'Veuillez écrire un message décrivant votre problème.<br/>';
+       $errors++;
+       $errorMessage = 'Would you please write me a message? I need that ;)';
        }
        } else {
-       $errors .= 'Veuillez décrire votre problème.<br/>';
+         $errors++;
+       $errorMessage .= 'Would you please write me a message? I need that ;)';
      }
-    if (!$errors) {
+
+    if ($errors = 1 ) {
        $to = 'habibem@gmail.com';
        $subject = 'Internship Webapp: message';
        $headers = 'Mime-Version: 1.0'."\r\n";
@@ -56,12 +66,12 @@ if (isset($_POST["submit"])) {
        $message .= "Message:<br />" . $_POST["message"] . "<br />";
        $envoi = mail($to, $subject, $message, $headers);
         } else {
-        echo '<div style="color: red">' . $errors . '<br/></div>';
+        $message4 = 'Would you Check the form for missing elements?thx!' ;
       }
-    if ($envoi) {
-        $message2 =  'Your kind message has been sent! :happyFace';
+      if (isset($envoi)) {
+        $message2 =  ', thank you! Your message has been sent! <sup>:happyFace</sup>';
       } else {
-        $message2 = 'Waaaaat? no way...it seems the message was not sent :sadFace:';
+        $message2 = '<a href="#contact">, waaaaat? the message went all 404 on us <sub>:sadFace:</sub></a> ';
       }
 }
 

@@ -24,11 +24,9 @@
                $header.fadeOut(500);
            }
          });
-
+//smoothscroll et ajout classe lors du scroll
    $window.ready(function () {
     $window.on('scroll', onScroll);
-
-    //smoothscroll et ajout classe
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
@@ -42,7 +40,7 @@
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
+            'scrollTop': $target.offset().top-100
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -55,7 +53,7 @@
         $('nav a').each(function () {
             let currLink = $(this);
             let refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            if (refElement.position().top-100 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('nav ul li a').removeClass("active");
                 currLink.addClass("active");
             }
